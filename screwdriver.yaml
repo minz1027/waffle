@@ -1,0 +1,7 @@
+shared:
+    image: node:6
+
+jobs:
+    main:
+        steps:
+          - test: echo hello
