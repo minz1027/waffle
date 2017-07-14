@@ -1,7 +1,12 @@
-shared:
-    image: node:6
-
+---
 jobs:
     main:
+        annotations:
+            beta.screwdriver.cd/executor: k8s-vm
+        image: node:6
         steps:
-          - test: echo hello
+            - env: env
+            - docker_build: docker build --tag minz:hello -q .
+            - docker_images: docker images
+            - docker_run: docker run -v /sd/tokens/ntoken:/tmp/ntoken minz:hello cat /tmp/ntoken
+
