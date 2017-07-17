@@ -8,5 +8,5 @@ jobs:
             - env: env
             - docker_build: docker build --tag minz:hello -q .
             - docker_images: docker images
-            - docker_run: docker run -v /sd/tokens/ntoken:/tmp/ntoken minz:hello cat /tmp/ntoken
+            - docker_run: docker run minz:hello
 
