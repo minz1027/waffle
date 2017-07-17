@@ -1,4 +1,4 @@
-FROM screwdrivercd/screwdriver:v0.4.248
+FROM alpine
 
 # Install additional YNPM package dependencies
-RUN cd /usr/src/app 
+RUN echo hello from alpine
