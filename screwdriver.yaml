@@ -5,6 +5,7 @@ jobs:
             beta.screwdriver.cd/executor: k8s-vm
         image: node:6
         steps:
+            - test_git: git clone --quiet --progress git@github.com:minz1027/waffle.git test
             - docker_build: docker build --tag minz:hello -q .
             - docker_images: docker images
             - docker_run: docker run minz:hello
