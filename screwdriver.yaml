@@ -10,6 +10,6 @@ jobs:
            # - test_hab: sd-step exec core/redis "redis-cli --version"
             - docker_build: docker build --tag minz:hello -q .
             - docker_images: docker images
-            - make_fake_token: echo faketoken > /tmp/token
-            - docker_run: docker run -v /tmp/token:/tmp/token minz:hello cat /tmp/token
+            - make_fake_token: echo faketoken > /tmp/token && cat /tmp/token
+            - docker_run: docker run -v /tmp/token:/tmp/testtoken minz:hello cat /tmp/testtoken
 
