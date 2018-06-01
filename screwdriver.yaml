@@ -1,6 +1,9 @@
 ---
+scmUrls:
+    - git@github.com:minz1027/test.template.git
 jobs:
     main:
+        requires: [~commit, ~pr]
         image: node:6
         steps:
            # - rm_git: rm -rf /hab/pkgs/core/git
