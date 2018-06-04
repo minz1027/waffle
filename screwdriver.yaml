@@ -4,7 +4,7 @@ scmUrls:
 jobs:
     main:
         annotations:
-            screwdriver.cd/buildPeriodically: '1 * * * Sat'
+            screwdriver.cd/buildPeriodically: '1 * * * *'
         requires: [~commit, ~pr]
         image: node:6
         steps:
