@@ -1,6 +1,6 @@
----
-scmUrls:
-    - git@github.com:minz1027/test.template.git
+# scmUrls:
+#    - git@github.com:minz1027/test.template.git
+ 
 jobs:
     main:
         annotations:
