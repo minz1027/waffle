@@ -3,8 +3,8 @@
  
 jobs:
     main:
-        annotations:
-            screwdriver.cd/buildPeriodically: '35 * * * *'
+#        annotations:
+#            screwdriver.cd/buildPeriodically: '35 * * * *'
         requires: [~commit, ~pr]
         image: node:6
         steps:
