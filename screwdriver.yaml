@@ -1,5 +1,6 @@
-scmUrls:
-   - git@github.com:minz1027/test.template.git
+childPipelines:
+   scmUrls:
+      - git@github.com:minz1027/test.template.git
  
 jobs:
     main:
