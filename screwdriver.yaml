@@ -1,7 +1,7 @@
 childPipelines:
    scmUrls:
       - git@github.com:minz1027/test.template.git
-      - git@github.com:pranavrc/test.template.git
+      - git@github.com:d2lam/lab7.git
  
 jobs:
     main:
