@@ -3,7 +3,7 @@ jobs:
     main:
 #        annotations:
 #            screwdriver.cd/buildPeriodically: '35 * * * *'
-        requires: [~commit, ~pr]
+        requires: [~commit, ~pr, ~sd@365:no_main]
         image: node:6
         steps:
            - echo: echo hi
