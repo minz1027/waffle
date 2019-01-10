@@ -4,7 +4,7 @@ jobs:
 #        annotations:
 #            screwdriver.cd/buildPeriodically: '35 * * * *'
         requires: [~commit, ~pr, ~sd@365:no_main]
-        image: node:8
+        image: wrong
         steps:
            - sleep: sleep 60
 
