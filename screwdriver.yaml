@@ -1,8 +1,8 @@
 
 jobs:
     main:
-#        annotations:
-#            screwdriver.cd/buildPeriodically: '35 * * * *'
+       annotations:
+           screwdriver.cd/collapseBuilds: false
         requires: [~commit, ~pr, ~sd@365:no_main]
         image: screwdrivercd/launcher
         steps:
