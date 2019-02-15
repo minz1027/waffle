@@ -1,8 +1,8 @@
 
 jobs:
     main:
-       annotations:
-           screwdriver.cd/collapseBuilds: false
+        annotations:
+            screwdriver.cd/collapseBuilds: false
         requires: [~commit, ~pr, ~sd@365:no_main]
         image: screwdrivercd/launcher
         steps:
